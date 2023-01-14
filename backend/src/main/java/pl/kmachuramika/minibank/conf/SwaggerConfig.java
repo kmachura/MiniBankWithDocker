@@ -5,6 +5,6 @@ import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@OpenAPIDefinition(info=@Info(title = "MiniBank 2.0"))
+@OpenAPIDefinition(info=@Info(title = "Mini Bank"))
 public class SwaggerConfig {
 }
