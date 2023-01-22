@@ -40,9 +40,14 @@
         <div class="col-lg-6">
           <h1 class="big-heading">Poznaj bankowość XXI wieku...</h1>
           <a routerLink="/pobranie">
+<<<<<<< Updated upstream
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-apple"></i> Pobierz</button></a>
+=======
+          <button type="button" class="btn btn-outline-light btn-lg download-button">
+            <fa-icon [icon]="faAppleAlt"></fa-icon> Pobierz</button></a>
+>>>>>>> Stashed changes
           <a routerLink="/pobranie">
-          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-windows"></i> Pobierz</button></a>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><fa-icon [icon]="faWindowRestore "></fa-icon>Pobierz</button></a>
         </div>
 
         <div class="col-lg-6">
@@ -64,19 +69,19 @@
 
       <div class="row">
         <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-user fa-4x"></i>
+            <fa-icon [icon]="faUser"></fa-icon>
           <h3 class="feature-title">Użytkowanie.</h3>
           <p>Tak łatwem,że nawet nie zorientujesz się, że to już koniec.</p>
         </div>
 
         <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-person-shelter fa-4x"></i>
+         <fa-icon [icon]="faUserClock"></fa-icon>
           <h3 class="feature-title">Pewność działalności</h3>
           <p>Zaloguj się kiedy chcesz i skąd chcesz -laptop, tablet lub komórka.</p>
         </div>
-
+    
         <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-user-shield fa-4x"></i>
+            <fa-icon [icon]="faUserShield"></fa-icon>
           <h3 class="feature-title">Bezpieczeństwo.</h3>
           <p>Twoje pieniądze w bezpiecznym miejscu.</p>
         </div>
