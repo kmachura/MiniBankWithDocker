@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  backend:
+    image: minibankwithdocker
+    container_name: minibankwithdocker
+    build:
+      context: ./backend
+    ports:
+      - "9000:8082"
+  frontend:
+    image: minibankwithdocker-ui
+    container_name: minibankwithdocker-ui
+    build:
+      context: ./frontend
+    ports:
+      - "4200:8082"
+    depends_on:
+      - backend

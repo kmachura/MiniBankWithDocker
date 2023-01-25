@@ -1,0 +1,220 @@
+
+  <section class="colored-section" id="title">
+    <a routerLink="/waluty">Waluty</a>
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark" >
+
+        <a class="navbar-brand" href="">Mini bank</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <fa-icon [icon]="faCoffee"></fa-icon>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Załóż konto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Pobierz aplikację</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row"> 
+        
+        <div class="col-lg-6">
+          <h1 class="big-heading">Poznaj bankowość XXI wieku...</h1>
+          <a routerLink="/pobranie">
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-apple"></i> Pobierz</button></a>
+          <a routerLink="/pobranie">
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-windows"></i> Pobierz</button></a>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="assets/images/Minibankfront.png" alt="piggy-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-user fa-4x"></i>
+          <h3 class="feature-title">Użytkowanie.</h3>
+          <p>Tak łatwem,że nawet nie zorientujesz się, że to już koniec.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-person-shelter fa-4x"></i>
+          <h3 class="feature-title">Pewność działalności</h3>
+          <p>Zaloguj się kiedy chcesz i skąd chcesz -laptop, tablet lub komórka.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-user-shield fa-4x"></i>
+          <h3 class="feature-title">Bezpieczeństwo.</h3>
+          <p>Twoje pieniądze w bezpiecznym miejscu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Już nie muszę się martwić, że nie będę się mogła się zalogować do banku.</h2>
+          <img class="testimonial-image" src="images/kobieta.jpg" alt="kobieta-profile">
+          <em>Anna, Warszawa</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Problemy z księgową. Wysokie opłaty. Teraz, to przeszłość.</h2>
+          <img class="testimonial-image" src="images/mężczyzna.jpg" alt="mężczyzna-profile">
+          <em>Janek, Kraków</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Plan na każdą kieszeń</h2>
+    <p>Każdy znajdzie coś dla siebie</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Konto osobiste</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Darmowe</h2>
+            <p>Zobacz jak łatwo można zaoszczędzić swoje pieniądze.</p>
+            <p>Pomoc konsultanta w godzinach pracy banku</p>
+            <p>Pierwsze 5 wymian waluty bez prowizji</p>
+            <p>Wszystkie dostępne funkcje aplikacji</p>
+            <a href="konto.html" target="_blank">
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Zapisz się</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Konto firmowe</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">45zł / miesiąc</h2>
+            <p>Zamiast pracować i szkolić się w zawodzie tracisz czas nad fakturami. Nigdy więcej. Oferujemy pomoc w prowadzeniu dokumentacji firmy. </p>
+            <p>Darmowe konsultacje prawne. Nasz Radca prawny doradzi ci co zrobić.</p>
+            <p>Wszystkie dostępne funkcje aplikacji</p>
+            <a href="konto.html" target="_blank">
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Zapisz się</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Konto oszczędnościowe</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">20zł /miesiąc</h2>
+            <p>8% w skali roku</p>
+            <p>Konsultacje giełdowe</p>
+            <p>Wpłacanie i wyplacanie pieniędzy bez utraty odsetek</p>
+            <p>Wszystkie dostępne funkcje aplikacji</p>
+            <a href="konto.html" target="_blank">
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Zapisz się</button></a>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Znajdź wszystko to co potrzebujesz od banku w jednym miejscu. Znajdź Mini bank.</h3>
+      <a href="pobranie.html" target="_blank">
+      <button class="download-button btn btn-lg btn-light" type="button"><i class="fa-brands fa-apple"></i> Pobierz</button></a>
+      <a href="pobranie.html" target="_blank">
+      <button class="download-button btn btn-lg brn-light" type="button"><i class="fa-brands fa-windows"></i> Pobierz</button></a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright Mini bank</p>
+    </div>
+  </footer>
+
