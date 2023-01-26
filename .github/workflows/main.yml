@@ -64,15 +64,6 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
         
-      
-      name: Build & Deploy
-
-on:
-  push:
-    branches: [ develop ]
-  workflow_dispatch:
-
-jobs:
   build_and_push:
     name: Build & Push to DockerHub
     runs-on: ubuntu-latest
