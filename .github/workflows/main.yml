@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "Main workflow"
 
 on:
   push:
@@ -68,7 +68,8 @@ jobs:
     name: Build & Push to DockerHub
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
