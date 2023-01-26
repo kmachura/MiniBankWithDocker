@@ -2,8 +2,8 @@
 # Build
 #
 FROM maven:3.6.0-jdk-11-slim AS build
-COPY src /home/minibankwithdocker/src
-COPY pom.xml /home/minibankwithdocker
+COPY /home/minibankwithdocker/src /home/minibankwithdocker/src
+COPY /home/minibankwithdocker/pom.xml /home/minibankwithdocker/pom.xml
 RUN mvn -f /home/minibankwithdocker/pom.xml clean package
 #
 # Package stage
