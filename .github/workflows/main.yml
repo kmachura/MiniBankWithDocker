@@ -94,7 +94,8 @@ jobs:
       - name: Docker Build and Push to DockerHub
         uses: docker/build-push-action@v3
         with:
-          context: ./backend/
+          context: .
+          file: ./backend/Dockerfile
           push: true
           tags: kmmika/minibankapp:latest
 
