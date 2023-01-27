@@ -28,24 +28,64 @@
         </div>
     
         <div class="col-lg-6">
-          <form action="mailto:alexshailiha@gmail.com" method="post" enctype="text/plain">
-            <label>Nazwisko:</label>
-            <input type="text" name="imię" value=""> <br>
-            <label>Imię:</label>
-            <input type="text" name="nazwisko" value=""> <br>
-            <label>Pesel:</label>
-            <input type="text" name="Pesel" value=""> <br>
-            <label>Numer telefonu:</label>
-            <input type="text" name="telefon" value=""><br>
-            <label>Adres email:</label>
-            <input type="email" name="email" value=""> <br>
-            <label>Hasło:</label>
-            <input type="text" name="hasło" value=""><br>
-            <label>Powtórz Hasło:</label>
-            <input type="text" name="hasło" value=""> <br>
-            
-            <input type="submit" name="" value="Załóż konto"> <a routerLink="/login"> Login</a> 
-          </form>
+          <div class="container">
+            <legend>Login</legend>
+            <div class="row">
+              <div class="col col-md-8" >
+                <form [formGroup]="jobForm" (ngSubmit)="save()">
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label">Pierwsze Imię</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      formControlName="firstName"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="surname" class="form-label">Nazwisko</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="surname"
+                      formControlName="surname"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="pesel" class="form-label">Pesel</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pesel"
+                      formControlName="pesel"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Telefon</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phoneNumber"
+                      formControlName="phoneNumber"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      formControlName="email"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="col col-md-4">
+                <div style="position: fixed">{{ preview }}</div>
+              </div>
+            </div>
+          </div>
     
     
         </div>
