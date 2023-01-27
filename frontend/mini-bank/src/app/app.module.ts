@@ -9,6 +9,9 @@ import { WalutyComponent } from './waluty/waluty.component';
 import { MainComponent } from './main/main.component';
 import { KontoComponent } from './konto/konto.component';
 import { PobranieComponent } from './pobranie/pobranie.component';
+import { LoginComponent } from './login/login.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { PobranieComponent } from './pobranie/pobranie.component';
     WalutyComponent,
     MainComponent,
     KontoComponent,
-    PobranieComponent
+    PobranieComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
