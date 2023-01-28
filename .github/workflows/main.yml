@@ -89,14 +89,14 @@
       - name: Build backend
         run: mvn clean package -f backend/pom.xml
       
-      - name: Build frontend
-        run: cd home/frontend/mini-bank/src npm install && npm run build
+   ##   - name: Build frontend
+  ##      run: cd home/frontend/mini-bank/src npm install && npm run build
       
       - name: Build backend Docker image
         run: docker build -t minibankwithdocker -f backend/Dockerfile .
       
-      - name: Build frontend Docker image
-        run: docker build -t minibankwithdocker-ui -f frontend/Dockerfile .
+   ##   - name: Build frontend Docker image
+    ##    run: docker build -t minibankwithdocker-ui -f frontend/Dockerfile .
       
       - name: Prepare password
         run: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
@@ -104,7 +104,7 @@
       - name: Push backend image to Docker Hub
         run: docker push minibankwithdocker-ui
       
-      - name: Push frontend image to Docker Hub
-        run: docker push minibankwithdocker
+  ##    - name: Push frontend image to Docker Hub
+   ##     run: docker push minibankwithdocker
 
    
