@@ -92,7 +92,7 @@
         run: mvn clean package -f backend/pom.xml
       
       - name: Build frontend
-        run: npm install && npm run build -f frontend
+        run: npm install && npm run build -f frontend/mini-bank
       
       - name: Build backend Docker image
         run: docker build -t minibankwithdocker -f backend/Dockerfile .
