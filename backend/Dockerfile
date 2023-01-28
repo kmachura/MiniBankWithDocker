@@ -4,8 +4,8 @@ RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY target/*.jar minibank-0.0.1-SNAPSHOT.jar
+COPY target/*.jar app.jar
 
 EXPOSE 8082
 
-CMD ["java", "-jar", "minibank-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "app.jar"]
