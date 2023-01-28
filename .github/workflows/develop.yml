@@ -79,17 +79,9 @@
       - name: Build with Maven
         run: mvn -B package --file ./backend/pom.xml
 
-
-name: Build and Push Docker Images
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
   build:
     runs-on: ubuntu-latest
+    needs: maven_build
 
     steps:
       - name: Checkout code
