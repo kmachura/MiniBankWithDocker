@@ -1,11 +1,22 @@
-FROM openjdk:11-jdk-slim
+FROM maven:3.6.3-openjdk-11 as build
 
-RUN mkdir -p /usr/src/app
+COPY . /app
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY target/*.jar minibank-0.0.1-SNAPSHOT.jar.jar
+RUN mvn clean package
 
-EXPOSE 8082
+FROM openjdk:11-jre-slim
 
-CMD ["java", "-jar", "minibank-0.0.1-SNAPSHOT.jar.jar"]
+ENV APP_FILE minibank-0.0.1-SNAPSHOT.jar
+ENV APP_HOME /usr/app
+
+EXPOSE 8080
+
+COPY --from=build /app/target/$APP_FILE $APP_HOME/
+
+WORKDIR $APP_HOME
+
+ENTRYPOINT ["sh", "-c"]
+
+CMD ["exec java -jar $APP_FILE"]
