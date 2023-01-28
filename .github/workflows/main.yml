@@ -102,9 +102,9 @@
         run: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         
       - name: Push backend image to Docker Hub
-        run: docker push minibankwithdocker-ui
+        run: docker push minibankwithdocker
       
   ##    - name: Push frontend image to Docker Hub
-   ##     run: docker push minibankwithdocker
+   ##     run: docker push minibankwithdocker-ui
 
    
