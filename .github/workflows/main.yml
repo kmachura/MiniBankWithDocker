@@ -81,6 +81,7 @@
 
   build:
     runs-on: ubuntu-latest
+    needs: maven_build
 
     steps:
       - name: Checkout code
