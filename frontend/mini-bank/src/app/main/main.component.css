@@ -5,10 +5,13 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat-Bold";
+    text-align: center;
   }
   
   p {
     color: #8f8f8f;
+    text-align: center;
+
   }
   
   /* Headings */
@@ -104,6 +107,7 @@ body {
   .icon {
     color: #72ceef;
     margin-bottom: 1rem;
+    text-align: center;
   }
   
   .icon:hover {
@@ -134,7 +138,7 @@ body {
   }
   
   .press-logo {
-    width: 15%;
+    width: 22%;
     margin: 20px 20px 50px;
   }
   
@@ -147,6 +151,7 @@ body {
   .price-text {
     font-size: 3rem;
     line-height: 1.5;
+    text-align: center;
   }
   
   .pricing-column {
